@@ -21,7 +21,7 @@ public class AlipayCooperate extends AlipayId
   if(list == null || CooperationIdMap.shouldReload)
   {
    list = new ArrayList<AlipayCooperate>();
-   Set idSet = CooperationIdMap.getIdMap().entrySet();
+   Set<Map.Entry> idSet = CooperationIdMap.getIdMap().entrySet();
    for(Map.Entry entry: idSet)
    {
     list.add(new AlipayCooperate(entry.getKey().toString(), entry.getValue().toString()));

@@ -33,7 +33,7 @@ public class AntForestToast
       {
        try
        {
-        Toast.makeText(context, cs, 0).show();
+        Toast.makeText(context, cs, Toast.LENGTH_SHORT).show();
        }catch(Throwable t)
        {
         Log.i(TAG, "show.run err:");

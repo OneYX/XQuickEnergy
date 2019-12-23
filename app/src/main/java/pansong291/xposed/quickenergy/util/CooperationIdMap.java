@@ -54,7 +54,7 @@ public class CooperationIdMap
   if(hasChanged)
   {
    StringBuilder sb = new StringBuilder();
-   Set idSet = getIdMap().entrySet();
+   Set<Map.Entry> idSet = getIdMap().entrySet();
    for(Map.Entry entry: idSet)
    {
     sb.append(entry.getKey());

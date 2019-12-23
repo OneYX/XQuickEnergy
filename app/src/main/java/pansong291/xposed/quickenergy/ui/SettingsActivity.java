@@ -290,7 +290,7 @@ public class SettingsActivity extends Activity
   if(Config.hasChanged)
   {
    Config.hasChanged = !Config.saveConfigFile();
-   Toast.makeText(this, "Configuration saved", 0).show();
+   Toast.makeText(this, "Configuration saved", Toast.LENGTH_SHORT).show();
   }
   FriendIdMap.saveIdMap();
   CooperationIdMap.saveIdMap();

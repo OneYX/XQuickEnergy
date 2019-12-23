@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.0"
+    compileSdkVersion 28
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
         applicationId "pansong291.xposed.quickenergy"
-        minSdkVersion 14
-        targetSdkVersion 21
+        minSdkVersion 21
+        targetSdkVersion 28
         versionCode 20191130
         versionName "1.2.7-temp.1"
     }
@@ -20,5 +20,6 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly 'de.robv.android.xposed:api:82'
 }

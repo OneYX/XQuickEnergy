@@ -101,14 +101,14 @@ public class MainActivity extends Activity
 
    case 2:
     if(FileUtils.copyTo(FileUtils.getStatisticsFile(), FileUtils.getExportedStatisticsFile()))
-     Toast.makeText(this, "Export success", 0).show();
+     Toast.makeText(this, "Export success", Toast.LENGTH_SHORT).show();
     break;
 
    case 3:
     if(FileUtils.copyTo(FileUtils.getExportedStatisticsFile(), FileUtils.getStatisticsFile()))
     {
      tv_statistics.setText(Statistics.getText());
-     Toast.makeText(this, "Import success", 0).show();
+     Toast.makeText(this, "Import success", Toast.LENGTH_SHORT).show();
     }
     break;
 
